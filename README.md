@@ -2,32 +2,31 @@
 
 # [fisherman] brew tap
 
-[![](https://img.shields.io/badge/fisherman-2.13.0-blue.svg)](https://github.com/fisherman/fisherman/releases)
-[![](https://fisherman-wharf.herokuapp.com/badge.svg)](https://fisherman-wharf.herokuapp.com)
+[![](https://img.shields.io/badge/fisherman-3.2.7-blue.svg)](https://github.com/jorgebucaran/fisher/releases)
 
 ## Usage
 
 ```shell
-brew tap fisherman/tap
+brew tap bbatsche/fisher
 ```
 
 Then choose to install:
 
 * the latest stable version of [fisherman]
 
-  ```
+  ```sh
   brew install fisherman
   ```
 
 * or latest commits from the `master` branch
 
-  ```
+  ```sh
   brew install --HEAD fisherman
   ```
 
 When you `brew update` this tap will be automatically updated, then you can upgrade fisherman as any other formula:
 
-```shell
+```sh
 brew update
 brew upgrade fisherman
 ```
@@ -36,5 +35,5 @@ brew upgrade fisherman
 
 Update the two fields in [`fisherman.rb`](./fisherman.rb#L5-L6):
 
-- the version of `fisher.fish` in the `url`
-- `sha256` which can be obtained with `shasum -a 256 fisher.fish`
+- the version of release tarball in the `url`
+- `sha256` which can be obtained with `shasum -a 256 [version].tar.gz`
